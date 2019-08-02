@@ -34,19 +34,19 @@ namespace SnakeTheGame
         {
             if(direction == Direction.RIGHT)
             {
-                x = x + offset;
+                x = x - offset;
             }
             else if(direction == Direction.LEFT)
             {
-                x = x - offset;
+                x = x + offset;
             }
             else if(direction == Direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }
             else if(direction == Direction.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
 
@@ -54,6 +54,12 @@ namespace SnakeTheGame
         {
             Console.SetCursorPosition(x, y);
             Console.Write(symb);
+        }
+
+        public void Clear()
+        {
+            symb = ' ';
+            Draw();
         }
 
         public override string ToString()
