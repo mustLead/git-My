@@ -16,27 +16,10 @@ namespace SnakeTheGame
             point p2 = new point(4, 5, '#');
             p2.Draw();
 
-            point p3 = new point(8, 4, '@');
-            p3.Draw();
-
-            point p4 = new point(5, 9, '&');
-            p4.Draw();
-
-            List<char> CharList = new List<char>();
-            CharList.Add('*');
-            CharList.Add('#');
-            CharList.Add('@');
-
-            foreach (char c in CharList)
-            {
-                Console.WriteLine(c);
-            }
-
-            List<point> pointList = new List<point>();
-            pointList.Add(p1);
-            pointList.Add(p2);
-            pointList.Add(p3);
-            pointList.Add(p4);
+            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
+            line.Drow();
+            VerticalLine vline = new VerticalLine(9, 14, 5, '+');
+            vline.Drow();
 
             Console.ReadLine();
         }
