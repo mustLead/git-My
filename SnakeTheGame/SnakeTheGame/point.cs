@@ -12,6 +12,17 @@ namespace SnakeTheGame
         public int y;
         public char symb;
 
+        public point()
+        {
+        }
+
+        public point(int _x, int _y, char _symb)
+        {
+            x = _x;
+            y = _y;
+            symb = _symb;
+        }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
