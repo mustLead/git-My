@@ -10,10 +10,10 @@ namespace SnakeTheGame
     {
         List<point> pList;
 
-        public VerticalLine(int yLeft, int yRight, int x, char symb)
+        public VerticalLine(int yUp, int yDown, int x, char symb)
         {
             pList = new List<point>();
-            for (int y = yLeft; y <= yRight; y++)
+            for (int y = yUp; y <= yDown; y++)
             {
                 point p = new point(x, y, symb);
                 pList.Add(p);
